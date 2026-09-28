@@ -1,0 +1,17 @@
+{
+  "name": "Próximo Passo · Monte seu currículo",
+  "short_name": "Próximo Passo",
+  "description": "Monte seu currículo em poucos minutos. Nada do que você escreve sai do seu celular.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F4F6F2",
+  "theme_color": "#1E6B58",
+  "icons": [
+    { "src": "icons/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icone.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

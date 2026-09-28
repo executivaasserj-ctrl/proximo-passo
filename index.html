@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; manifest-src 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Monte seu currículo em poucos minutos, de graça. Nada do que você escreve sai do seu celular.">
+  <meta name="theme-color" content="#1E6B58">
+  <title>Próximo Passo · Monte seu currículo</title>
+  <link rel="icon" href="icons/icone.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icone-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/perguntas.js" defer></script>
+  <script src="js/curriculo.js" defer></script>
+  <script src="js/pdf-metricas.js" defer></script>
+  <script src="js/pdf.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-interno">
+      <span class="marca">
+        <svg class="marca-icone" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="15" class="marca-fundo"></rect>
+          <path d="M15 47h11V37h11V27h12" class="marca-degrau"></path>
+        </svg>
+        Próximo Passo
+      </span>
+      <button type="button" id="sair" class="botao-sair" aria-describedby="sair-dica">
+        Sair rápido
+      </button>
+      <span id="sair-dica" class="so-leitor">Apaga tudo e abre o Google. No computador, aperte Esc duas vezes.</span>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <div id="progresso" class="progresso" hidden></div>
+    <div id="tela" class="tela"></div>
+  </main>
+
+  <nav id="navegacao" class="navegacao" aria-label="Navegação entre os passos" hidden>
+    <div class="navegacao-interna">
+      <button type="button" id="voltar" class="botao botao-secundario">Voltar</button>
+      <button type="button" id="avancar" class="botao botao-primario">Continuar</button>
+    </div>
+  </nav>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+
+  <noscript>
+    <p class="sem-script">Para montar seu currículo, ative o JavaScript no navegador.</p>
+  </noscript>
+</body>
+</html>
